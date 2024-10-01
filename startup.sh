@@ -27,4 +27,5 @@ git config --global init.defaultBranch main
 
 #pull repos
 git clone https://github.com/ejune1/utils.git utils
+git clone https://github.com/ejune1/test.git test
 
