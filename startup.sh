@@ -18,6 +18,9 @@ git config --global init.defaultBranch main
 #echo "# utils" >> README.md
 #git init
 #git add xxx
+#git commit -m "message"
+#git remote add origin something.git
+#git push -u origin main
 
 #pull repos
 
