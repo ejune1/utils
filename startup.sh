@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#local
+alias STAT='git status'
+
 #install packages
 sudo apt update -y
 sudo apt install g++ -y
@@ -23,4 +26,5 @@ git config --global init.defaultBranch main
 #git push -u origin main
 
 #pull repos
+git clone https://github.com/ejune1/utils.git utils
 
