@@ -29,3 +29,6 @@ git config --global init.defaultBranch main
 git clone https://github.com/ejune1/utils.git utils
 git clone https://github.com/ejune1/test.git test
 
+#bashrc stuff
+alias STAT='git status'
+alias vi='vim'
