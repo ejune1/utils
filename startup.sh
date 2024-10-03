@@ -10,6 +10,8 @@ sudo apt install gdb -y
 sudo apt install valgrind -y
 sudo apt install python3 -y
 sudo apt install git -y
+sudo apt install python3-pip -y
+sudo apt install python3.12-venv -y
 
 #git config
 git config --global user.name "ejune1"
@@ -32,3 +34,11 @@ git clone https://github.com/ejune1/test.git test
 #bashrc stuff
 alias STAT='git status'
 alias vi='vim'
+
+#grpc
+python3 -m venv .venv
+source .venv/bin/activate
+#deactivate
+python3 -m pip install grpcio
+python3 -m pip install grpcio-tools
+python -m grpc_tools.protoc -I../proto --python_out=. --pyi_out=. --grpc_python_out=. ../proto/rando.proto
