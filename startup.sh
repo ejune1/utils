@@ -60,7 +60,14 @@ sudo rm -rf /var/lib/containerd
 sudo docker build .
 sudo docker images
 sudo docker run <image>
+sudo docker ps
 sudo docker exec -it <container> /bin/bash
+sudo docker kill <container>
+sudo docker system prune -a --volumes
+
+#postgres
+sudo docker run -p 5432:5432 image
+psql -U postgres -h localhost -p 5432
 
 #python virtual env
 python3 -m venv .venv
