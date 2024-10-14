@@ -68,6 +68,8 @@ sudo docker system prune -a --volumes
 #postgres
 sudo docker run -p 5432:5432 image
 psql -U postgres -h localhost -p 5432
+psql -U postgres -h localhost -p 5432 -d test -f submission.sql
+\copy users FROM 'data/users.dat' delimiter '%' encoding 'UTF-8';
 
 #python virtual env
 python3 -m venv .venv
