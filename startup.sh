@@ -12,6 +12,7 @@ sudo apt install python3 -y
 sudo apt install git -y
 sudo apt install python3-pip -y
 sudo apt install python3.12-venv -y
+sudo apt install jq -y
 
 #git config
 git config --global user.name "ejune1"
@@ -80,3 +81,7 @@ source .venv/bin/activate
 python3 -m pip install grpcio
 python3 -m pip install grpcio-tools
 python -m grpc_tools.protoc -I../proto --python_out=. --pyi_out=. --grpc_python_out=. ../proto/rando.proto
+
+#vim
+#format json
+:%!jq 
