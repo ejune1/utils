@@ -82,6 +82,13 @@ python3 -m pip install grpcio
 python3 -m pip install grpcio-tools
 python -m grpc_tools.protoc -I../proto --python_out=. --pyi_out=. --grpc_python_out=. ../proto/rando.proto
 
+#jupyter notebook
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install jupyter
+python3 -m pip install cython
+python -m jupyter notebook
+
 #vim
 #format json
 :%!jq 
